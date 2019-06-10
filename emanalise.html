@@ -20,6 +20,14 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
 
+  <style>
+    .card-body{
+      margin: 3px;
+      padding: 20px;
+      text-align: left;
+    }
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -129,14 +137,178 @@
 
       <div class="container-fluid">
 
+        <!-- Modal de Login -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+  Área de Confirmação de usuário
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nome do Usuário</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu usuario">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="#">Em Análise</a>
           </li>
-          <li class="breadcrumb-item active">Overview</li>
+          <li class="breadcrumb-item active">GitHub</li>
+          <i class="fab fa-github"></i>
         </ol>
 
+<!-- card -->
+       <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+       <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
+  </div>
+</nav>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Lais Garcia</h5>
+    <div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><b>RG:</b> YY.YYY.YYY-Y
+    <br><b>CPF:</b> YYY.YYY.YYY-YY<br><b>Membro/a desde:</b> 2019</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><b>Setor:</b> Projetos<br><b>Cargo:</b> Desenvolvedor de Software<br><b>Acessos Concedidos:</b> Projeto Papinhas/ Projeto Tickets.</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><b>Email:</b> lais@excel.br
+    <br><b>Username:</b> @excel </div>
+</div>
+<br>
+    <p class="card-text"><button type="button" class="btn btn-outline-success">Autorizar</button>                      <button type="button" class="btn btn-outline-danger">Recusar</button></p>
+  </div>
+</div>
+<br>
+
+<!-- OUTRO CARD -->
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+       <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
+  </div>
+</nav>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Emerson Miady</h5>
+    <div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><b> RG: </b> XX.XXX.XXX-X
+    <br> <b>CPF: </b> XXX.XXX.XXX-XX <br> <b>Membro/a desde: </b> 2019</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">KKKKKKK</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><b>Email:</b> emerson@teamamos.br</div>
+  </div>
+  <br>
+    <p class="card-text"><button type="button" class="btn btn-outline-success">Autorizar</button>                      <button type="button" class="btn btn-outline-danger">Recusar</button></p>
+  </div>
+</div>
+<br>
+<br>
+
+<!-- Slack -->
+
+<ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="pendencias.html">Pendências</a>
+          </li>
+          <li class="breadcrumb-item active">Slack</li>
+          <i class="fab fa-slack"></i>
+        </ol>
+
+<!-- card -->
+       <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+       <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
+  </div>
+</nav>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Fernanda Elimelek</h5>
+    <div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><b>RG:</b> YY.YYY.YYY-Y
+    <br><b>CPF:</b> YYY.YYY.YYY-YY<br><b>Membro/a desde:</b> 2019</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><b>Setor:</b> Projetos<br><b>Cargo:</b> Desenvolvedor de Software<br><b>Acessos Concedidos:</b> Projeto Papinhas/ Projeto Tickets.</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><b>Email:</b> fer@style.br
+    <br><b>Username:</b> @fefa.</div>
+</div>
+<br>
+    <p class="card-text"><button type="button" class="btn btn-outline-success">Autorizar</button>                      <button type="button" class="btn btn-outline-danger">Recusar</button></p>
+  </div>
+</div>
+<br>
+
+<!-- OUTRO CARD -->
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+       <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
+  </div>
+</nav>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Lucas Imamura</h5>
+    <div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><b> RG: </b> XX.XXX.XXX-X
+    <br> <b>CPF: </b> XXX.XXX.XXX-XX <br> <b>Membro/a desde: </b> 2019</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">KKKKKKK</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><b>Email:</b> lucas@gostosa.br</div>
+  </div>
+  <br>
+    <p class="card-text"><button type="button" class="btn btn-outline-success">Autorizar</button>                      <button type="button" class="btn btn-outline-danger">Recusar</button></p>
+  </div>
+</div>
+<br>
+<br>
 
 
 
